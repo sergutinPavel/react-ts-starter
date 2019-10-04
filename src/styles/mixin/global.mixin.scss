@@ -1,0 +1,15 @@
+@mixin primary-font() {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin thin-font() {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin transition() {
+  transition: all 250ms ease-in-out;
+}

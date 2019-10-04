@@ -2,21 +2,32 @@
   "name": "react-ts-starter",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@types/jest": "24.0.18",
-    "@types/node": "12.7.11",
-    "@types/react": "16.9.5",
-    "@types/react-dom": "16.9.1",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0",
-    "typescript": "3.6.3"
-  },
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "tslint 'src/**/*.{ts,tsx}'",
+    "lint-fix": "tslint 'src/**/*.{ts,tsx}' --fix"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "@svgr/cli": "^4.3.3",
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.11",
+    "@types/react": "16.9.5",
+    "@types/react-dom": "16.9.1",
+    "core-js": "^3.2.1",
+    "node-sass": "^4.12.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-react": "^4.1.0",
+    "typedoc": "^0.15.0",
+    "typescript": "3.6.3"
   },
   "eslintConfig": {
     "extends": "react-app"

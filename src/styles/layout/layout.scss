@@ -1,0 +1,35 @@
+@import 'styles/global-variables';
+@import 'styles/mixin/global.mixin';
+
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  font-size: 10px;
+  //font-weight: 500;
+  @include primary-font();
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: $background-color;
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  font-size: 1.8rem;
+  font-weight: 500;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
