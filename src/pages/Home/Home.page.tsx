@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 
 
 interface IOwnProps {
@@ -8,7 +8,7 @@ interface IOwnState {
   readonly [key: string]: any;
 }
 
-class HomePage extends PureComponent<IOwnProps, IOwnState> {
+class HomePage extends Component<IOwnProps, IOwnState> {
   constructor(props: IOwnProps) {
     super(props);
     this.state = {

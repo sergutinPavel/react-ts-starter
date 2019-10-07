@@ -20,7 +20,7 @@ export const RootRoutes = (props: IProps) => {
         <Switch>
 
             <Route path="/home" component={HomePage} exact={true} />
-            <Route path="/settings" render={SettingsPage} />
+            <Route path="/settings" component={SettingsPage} />
             <Route path="/not-found" component={NotFound} />
             <Redirect from="/" to="/home" exact={true} />
 
