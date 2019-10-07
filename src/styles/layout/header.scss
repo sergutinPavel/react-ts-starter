@@ -1,0 +1,34 @@
+@import 'styles/global-variables';
+@import 'styles/mixin/global.mixin';
+
+.top-nav {
+  position: relative;
+  @include centeredFlexRow();
+  &__link {
+    position: relative;
+    @include centeredFlexRow();
+    border: .2rem solid rgba($primary-color, 0.4);
+    border-radius: .4rem;
+    outline: none;
+    margin: 0 1rem;
+    padding: 1rem;
+    background-color: rgba($secondary-color, 0);
+    color: $primary-color;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link.active {
+    background-color: rgba($secondary-color, 0.4);
+    color: $success-color__dark;
+    border-color: $success-color__dark;
+  }
+  &__link:hover,
+  &__link:focus {
+    border-color: $success-color__dark;
+    box-shadow: 0 0 1px 2px rgba($success-color__dark, 0.4);
+  }
+}

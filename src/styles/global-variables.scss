@@ -2,17 +2,39 @@ $app-sizes: (
         large: 1.2rem,
         medium: 1rem,
         small: 0.6rem,
-        header-height: 12rem,
+        header-height: 6rem,
         font-size-l: 3rem,
         font-size-m: 2.5rem,
         font-size-s: 2rem,
 );
 
-$primary-color: #002d62;
-$secondary-color: #0094ff;
-$highlight-color: #ffe400;
+$primary-color: #403F6F;
+$primary-color__dark: #2c344e;
 
-$background-color__light: #fff;
-$background-color: #d2d2d2;
-$background-color__dark: #4d4d4d;
-$background-color__darkest: #000;
+$secondary-color__light: #fffaf6;
+$secondary-color: #f1ddcf;
+$secondary-color__dark: #a99c91;
+
+$highlight-color__light: #e4eaff;
+$highlight-color: #c8d5ff;
+$highlight-color__dark: #3f4b6f;
+
+$success-color__light: #bffff5;
+$success-color: #00AB78;
+$success-color__dark: #007865;
+
+$warning-color__light: #fff680;
+$warning-color: #FFF44F;
+$warning-color__dark: #FFD700;
+
+$danger-color__light: #ffb6af;
+$danger-color: #fe6f5e;
+$danger-color__dark: #b24c42;
+//$danger-color__light: #ffbfdc;
+//$danger-color: #800020;
+//$danger-color__dark: #5a0028;
+
+$monochrome-color__light: #fff;
+$monochrome-color: #d2d2d2;
+$monochrome-color__dark: #4d4d4d;
+$monochrome-color__darkest: #000;

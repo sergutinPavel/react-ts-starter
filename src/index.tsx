@@ -3,11 +3,39 @@ import './styles/index.scss';
 import './polyfills';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import {
+  MuiThemeProvider,
+  createMuiTheme,
+  responsiveFontSizes,
+} from '@material-ui/core/styles';
+import { AppComponent } from './App.component';
+import { RouterComponent } from './components/Routing/Router.component';
 import * as serviceWorker from './serviceWorker';
 
+
+let theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#2c344e',
+    },
+    secondary: {
+      main: '#f1ddcf',
+    },
+  },
+  typography: {
+    button: {
+      fontSize: '1.6rem',
+    }
+  },
+});
+theme = responsiveFontSizes(theme);
+
 ReactDOM.render(
-  <App />,
+  <MuiThemeProvider theme={theme}>
+    <AppComponent>
+      <RouterComponent />
+    </AppComponent>
+  </MuiThemeProvider>,
   document.getElementById('react-app-root') as HTMLElement,
 );
 

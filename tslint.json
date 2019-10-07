@@ -5,8 +5,13 @@
     "tslint-react",
     "tslint-config-prettier"
   ],
+  "plugins": [
+    "react-hooks"
+  ],
   "rulesDirectory": [],
   "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "max-line-length": {
       "options": [120]
     },
@@ -19,5 +24,12 @@
     "max-line-length": {
       "options": [120]
     }
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
   }
 }

@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin"
+      }
+    ],
     "target": "es5",
     "lib": [
       "dom",
@@ -17,8 +22,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "rootDir": "src"
   },
+  "exclude": [
+    "build",
+    "public",
+    "webpack",
+    "jest",
+    "node_modules"
+  ],
   "include": [
     "src"
   ]

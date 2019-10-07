@@ -23,7 +23,8 @@ body {
   align-items: center;
   padding: 0;
   margin: 0;
-  background-color: $background-color;
+  background-color: $secondary-color;
+  color: $primary-color__dark;
   //background-repeat: no-repeat;
   //background-size: cover;
   font-size: 1.8rem;
@@ -32,4 +33,71 @@ body {
   max-height: 100%;
   width: 100%;
   max-width: 100%;
+}
+
+#react-app-root {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.app-layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  &__header,
+  &__page {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+  }
+  &__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: map-get($app-sizes, header-height);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    box-shadow: 0 0 2rem 1rem rgba($secondary-color__dark, 0.2);
+  }
+  &__header.hide {
+    box-shadow: none;
+    top: -(map-get($app-sizes, header-height));
+  }
+  &__page {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
+    overflow-x: auto;
+    padding: map-get($app-sizes, header-height) 0 0;
+
+  }
+  &__content {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+    &:after {
+      content: ' ';
+      display: block;
+      height: 2rem;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
 }
